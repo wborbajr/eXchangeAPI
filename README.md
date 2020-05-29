@@ -44,7 +44,7 @@ echo ALLOWED_HOSTS='"127.0.0.1", "localhost"' >> .env
 
 ### To run the web application in debug use:
 ```
-uvicorn app.main:app --reload
+npm start
 ```
 
 ### Project structure
