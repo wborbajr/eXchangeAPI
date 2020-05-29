@@ -22,7 +22,23 @@ fastify.register(db)
 // Register Swagger
 fastify.register(require('fastify-swagger'), swagger.options)
 
-fastify.register(carRoutes)
+fastify.register(carRoutes, { prefix: '/api/v1' })
+
+// const opts = {
+//   hello: 'world',
+//   something: true,
+// }
+
+// fastify.register([
+//   require('./routes/carRoutes')
+//   // require('./yet-another-route'),
+// ], opts, (err) => {
+//   if (err) throw err
+// })
+
+fastify.register(require('fastify-cors'), {
+  // put your options here
+})
 
 // Run the server!
 const start = async () => {
