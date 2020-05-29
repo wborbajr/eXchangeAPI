@@ -1,3 +1,5 @@
+'use strict'
+
 // Require the fastify framework and instantiate it
 const fastify = require('fastify')({
   logger: true
@@ -8,6 +10,7 @@ const db = require("./config/db")
 
 // Import Routes
 const routes = require('./routes/carRoutes')
+// const routes = require('./routes')
 
 // Import Swagger Options
 const swagger = require('./config/swagger')
@@ -21,9 +24,10 @@ fastify.register(db)
 fastify.register(require('fastify-swagger'), swagger.options)
 
 // Loop over each route
-routes.forEach((route, index) => {
-  fastify.route(route)
-})
+// routes.forEach((route, index) => {
+//   fastify.route(route)
+// })
+fastify.register(routes)
 
 // Run the server!
 const start = async () => {
