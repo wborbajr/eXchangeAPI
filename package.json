@@ -1,17 +1,27 @@
 {
   "name": "exchangeapi",
   "version": "1.0.0",
-  "description": "eXchange API",
-  "main": "bootstrap.js",
+  "description": "eXchange API with MongoDB",
+  "main": "src/bootstrap.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon bootstrap.js"
+    "start": "nodemon src/bootstrap.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wborbajr/eXchangeAPI.git"
   },
   "author": "Waldir Borba Junior <wborbajr@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wborbajr/eXchangeAPI/issues"
+  },
+  "homepage": "https://github.com/wborbajr/eXchangeAPI#readme",
   "dependencies": {
-    "@hapi/hapi": "^19.1.1",
-    "mongoose": "^5.9.13",
-    "nodemon": "^2.0.3"
+    "boom": "^7.3.0",
+    "fastify": "^2.14.1",
+    "fastify-swagger": "^2.6.0",
+    "mongoose": "^5.9.16",
+    "nodemon": "^2.0.4"
   }
 }
