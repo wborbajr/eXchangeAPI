@@ -9,8 +9,7 @@ const fastify = require('fastify')({
 const db = require("./config/db")
 
 // Import Routes
-const routes = require('./routes/carRoutes')
-// const routes = require('./routes')
+const carRoutes = require('./routes/carRoutes')
 
 // Import Swagger Options
 const swagger = require('./config/swagger')
@@ -23,11 +22,7 @@ fastify.register(db)
 // Register Swagger
 fastify.register(require('fastify-swagger'), swagger.options)
 
-// Loop over each route
-// routes.forEach((route, index) => {
-//   fastify.route(route)
-// })
-fastify.register(routes)
+fastify.register(carRoutes)
 
 // Run the server!
 const start = async () => {
