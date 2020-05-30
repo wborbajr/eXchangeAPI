@@ -2,6 +2,7 @@
 
 // Require the fastify framework and instantiate it
 const fastify = require('fastify')({
+  ignoreTrailingSlash: true,
   logger: true
 })
 
@@ -19,7 +20,7 @@ const PORT = Number(process.env.PORT) || 5050;
 // Register Database
 fastify.register(db)
 
-// Register Swagger
+// Register Swagger Configuration
 fastify.register(require('fastify-swagger'), swagger.options)
 
 // Register Routers
@@ -35,11 +36,24 @@ fastify.register(require('fastify-cors'), {
   origin: '*'
 })
 
+/**
+ * Works as a body-parser for request body
+ */
+fastify.addContentTypeParser('application/json', { parseAs: 'string' }, (req, body, done) => {
+  try {
+    const json = JSON.parse(body);
+    done(null, json);
+  } catch (err) {
+    err.statusCode = 400;
+    done(err, undefined);
+  }
+});
+
 // Run the server!
 const start = async () => {
   try {
     await fastify.listen(PORT, '0.0.0.0')
-    fastify.swagger()
+    fastify.swaggergit()
     fastify.log.info(`server listening on ${fastify.server.address().port}`)
   } catch (err) {
     fastify.log.error(err)
