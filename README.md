@@ -1,3 +1,22 @@
+## Build Setup
+
+```bash
+# install dependencies
+npm install
+
+# seed mongodb
+node ./src/helpers/seed.js
+
+# serve with hot reload at localhost:5050
+npm start
+```
+
+## Prerequisites
+
+- Nodejs
+- MongoDB
+
+
 ### MariaDB
 ```
 docker run -p 3306:3306 --rm -d --name api-db -eMARIADB_ROOT_PASSWORD=123mudar pickapp/mariadb-alpine
