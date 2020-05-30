@@ -21,6 +21,7 @@
     "boom": "^7.3.0",
     "fastify": "^2.14.1",
     "fastify-cors": "^3.0.3",
+    "fastify-jwt": "^1.4.0",
     "fastify-swagger": "^2.6.0",
     "mongoose": "^5.9.16",
     "nodemon": "^2.0.4"
