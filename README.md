@@ -1,6 +1,6 @@
 ## eXchangeAPI
 
-[![MobAPI](https://img.shields.io/badge/wborbajr-eXchanfeAPI-red)]()
+[![MobAPI](https://img.shields.io/badge/wborbajr-eXchangeAPI-red)]()
 [![License](https://img.shields.io/github/license/wborbajr/eXchangeAPI)]()
 [![Code Size](https://img.shields.io/github/languages/code-size/wborbajr/eXchangeAPI)]()
 [![Repo Size](https://img.shields.io/github/repo-size/wborbajr/eXchangeAPI)]()
