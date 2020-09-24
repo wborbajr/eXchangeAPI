@@ -1,3 +1,19 @@
+## eXchangeAPI
+
+[![MobAPI](https://img.shields.io/badge/wborbajr-MobAPI-red)]()
+[![License](https://img.shields.io/github/license/wborbajr/eXchangeAPI)]()
+[![Code Size](https://img.shields.io/github/languages/code-size/wborbajr/eXchangeAPI)]()
+[![Repo Size](https://img.shields.io/github/repo-size/wborbajr/eXchangeAPI)]()
+[![Issue](https://img.shields.io/github/issues/wborbajr/eXchangeAPI)]()
+[![Languages](https://img.shields.io/github/languages/count/wborbajr/eXchangeAPI)]()
+[![Build](https://img.shields.io/github/workflow/status/wborbajr/eXchangeAPI/Go)]()
+[![Docker Build](https://img.shields.io/docker/build/wborbajr/eXchangeAPI)]()
+[![Stars](https://img.shields.io/github/stars/wborbajr/eXchangeAPI)]()
+[![Forks](https://img.shields.io/github/forks/wborbajr/eXchangeAPI)]()
+[![Library](https://img.shields.io/librariesio/github/wborbajr/eXchangeAPI)]()
+
+
+
 ## Build Setup
 
 ```bash
